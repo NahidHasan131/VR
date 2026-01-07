@@ -4,8 +4,12 @@ import { testimonials } from "../constants";
 const Testimonial = () => {
     return (
         <div className="mt-24 tracking-wide">
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10">
-                What People are saying
+            <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
+                What People{" "}
+                <span className="bg-linear-to-r from-green-400 to-green-800 text-transparent bg-clip-text">
+                are saying.
+                </span>
+                <hr className="bg-linear-to-r from-green-400 to-green-800 border-0 h-1 mt-3 w-30 mx-auto"/>
             </h2>
             <div className="flex flex-wrap justify-center">
                 {testimonials.map((testimonial, index) => (

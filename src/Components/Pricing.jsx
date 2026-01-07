@@ -6,6 +6,7 @@ const Pricing = () => {
         <div className='mt-20'>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wide">
                 Pricing
+                <hr className="bg-linear-to-r from-green-400 to-green-800 border-0 h-1 mt-3 w-30 mx-auto"/>
             </h2>
             <div className="flex flex-wrap">
                 {pricingOptions.map((option, index) => (
@@ -14,14 +15,14 @@ const Pricing = () => {
                         <p className="text-4xl mb-8">
                             {option.title}
                             {option.title === "Pro" && (
-                            <span className="bg-linear-to-r from-orange-500 to-red-400 text-transparent bg-clip-text text-xl mb-4 ml-2">
+                            <span className="bg-linear-to-r from-green-400 to-green-600 text-transparent bg-clip-text text-xl mb-4 ml-2">
                                 (Most Popular)
                             </span>
                             )}
                         </p>
                         <p className="mb-8">
                             <span className="text-5xl mt-6 mr-2">{option.price}</span>
-                            <span className="text-neutral-400 tracking-tight">/Month</span>
+                            <span className="bg-linear-to-r from-green-800 to-green-400 text-transparent bg-clip-text tracking-tight">/Month</span>
                         </p>
                         <ul>
                             {option.features.map((feature, index) => (
@@ -33,7 +34,7 @@ const Pricing = () => {
                                 </li>
                             ))}
                         </ul>
-                        <a href="#" className="inline-flex justify-center items-center text-center w-full h-12 p-5 mt-20 tracking-tight text-lg hover:bg-linear-to-r from-orange-500 to-red-800 border border-orange-700 rounded-full transition duration-200">Subscribe</a>
+                        <a href="#" className="inline-flex justify-center items-center text-center w-full h-12 p-5 mt-20 tracking-tight text-lg hover:bg-linear-to-r from-green-400 to-green-800 border border-green-700 rounded-full transition duration-200">Subscribe</a>
                         </div>
                     </div>
                 ))}

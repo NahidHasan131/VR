@@ -8,9 +8,10 @@ const Workflow = () => {
         <div className='mt-20'>
             <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 tracking-wide">
                 Accelerate your{" "}
-                <span className="bg-linear-to-r from-orange-500 to-orange-800 text-transparent bg-clip-text">
+                <span className="bg-linear-to-r from-green-400 to-green-800 text-transparent bg-clip-text">
                 coding workflow.
                 </span>
+                <hr className="bg-linear-to-r from-green-400 to-green-800 border-0 h-1 mt-3 w-30 mx-auto"/>
             </h2>
             <div className="flex flex-wrap justify-center mt-5">
                 <div className="p-2 w-full lg:w-1/2">
